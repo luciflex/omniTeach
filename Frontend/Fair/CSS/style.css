@@ -351,49 +351,95 @@ margin-top:-3.6rem;
     /* width: 0.5rem; */
 }
 .plan-selection{
+    height: fit-content;
+    width: fit-content;
     display: flex;
-    
+    flex-direction: row;
+
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+   
     /* padding-left: 8rem;; */
 }
 .plans{
-    border: black solid 1px;
-    border-radius: 1rem;
-    background-color:whitesmoke;
+    /* overflow: auto; */
+    /* background-color:whitesmoke; */
+    display: block;
     text-align: center;
-    margin-top: 3rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    width: 30rem;
+     margin-top: 3rem;
+    /*margin-left: 4rem;
+    margin-right: 4rem; */
+    width: 18rem;
     padding-left:1rem;
     padding-right: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.15);
+   
+}
+.course-img{
+    display: block;
+    height: 35%;
+    width: 100%;
+
 }
 .plan-type{
-    font-size: 150%;
-    font-weight:bold;
-    padding-top: 1rem;
+    font-size: 200%;
+    font-weight:500;
+    padding-top: 1px;
     text-transform: uppercase;
+    text-align: start;
+    padding-bottom: 10px;
+    
 }
-.plan-head:before{
-    font-size: 250%;
+/* .plan-head:before{
+    /* font-size: 250%;
     font-weight: 600;
     color: #013243;
-    content: "$399";
-}
-.plan-head{
+    content: "₹100"; */
+/* } */ */
+/* .plan-head{
     padding-bottom: 1rem;
     color: rgb(63, 59, 59);
     border-bottom: black solid 0.5px;
-}
+} */
 .plan-detail{
+   
     display: flex;
     text-align: left;
+   
     margin: 1rem;
 }
+.plans div{
+    display: block;
+    margin-top:0;
+    border-bottom: black solid 2px;
+    padding-bottom: 30px;
+}
+.plans button{
+    position: relative;
+    top: -20px;
+    background-color:rgb(16, 120, 255);
+    height: 40px;
+    width:80px;
+    border: rgb(16, 120, 255) solid 1.5px;
+    border-radius: 7%;
+    color: white;
+    outline: none;
+    transition: 0.2s;
+}
+.plans button:hover{
+    background-color: rgb(13, 10, 151);
+    border: rgb(13, 10, 151) solid 1.5px;
+    cursor: pointer;
+    
+}
 .plan-deets{
-    border-bottom: black solid 1px;
+    
+    
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
     /* padding-bottom: 1rem; */
 }
 .submit-button{
